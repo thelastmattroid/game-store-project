@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Westwood Game Store</title>
+    <title>Westwood Games</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+        body {
+            background-color:black;
+        }
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        h1 {
+            text-align:center;
+            color:white;
+        }
+        .card-img-top {
+            width:100%;
+            height:15vw;
+            object-fit:cover;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-black bg-black">
         <a class="westwood-nav" href="home-page.html">
             <img src="Westwood_Logo.jpg" width="85" height="70" alt="Westwood Games Logo">
@@ -38,10 +51,10 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="color:white">
                         Events
                     </a> 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="gamenights.html">Game Nights</a></li>
-                        <li><a class="dropdown-item" href="tournaments.html">Tournaments</a></li>
-                        <li><a class="dropdown-item" href="signup.html">Event Sign Up</a></li>
+                    <ul class="dropdown-menu" style="background-color:black">
+                        <li><a class="dropdown-item" href="gamenights.html" style="color:white">Game Nights</a></li>
+                        <li><a class="dropdown-item" href="tournaments.html" style="color:white">Tournaments</a></li>
+                        <li><a class="dropdown-item" href="signup.html" style="color:white">Event Sign Up</a></li>
                     </ul>
                 </li>
             </ul>
@@ -50,7 +63,121 @@
             </div>
         </div>
     </nav> 
-
+    <!-- Carousel-->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>    
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Inside_the_Store.jpg" alt="Welcome to Westwood Games" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h2>Welcome to Westwood Games</h2>
+                    <p>Where the Magic Comes to Life</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="CardTournament.jpg" alt="Tournament Sign Ups" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h2>New Card Tournaments</h2>
+                    <p>Sign up to secure your spot!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="D&D_Carousel.jpg" alt="New Dungeons and Dragons Materials" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h2>New D&D Materials Available</h2>
+                    <p>Fantastical adventures await!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <br />
+    <div class="container" style="color:white">
+        <h1>Gather Your Party. It's Time to Play!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eos similique corporis beatae odio minus harum quisquam unde et praesentium eligendi aspernatur, sit nihil rerum doloremque labore fuga culpa dignissimos optio. Quia officia soluta, dicta expedita obcaecati dolores deserunt fugiat laboriosam mollitia rerum voluptatibus cum pariatur magnam unde ut ducimus quidem ipsum nobis quam architecto. Quam voluptatem quasi suscipit obcaecati mollitia facilis iusto vero praesentium ratione laborum assumenda aut autem cumque beatae similique, quibusdam sapiente sint quis recusandae corrupti architecto, nostrum harum. Sapiente voluptatum molestias placeat magni distinctio sit odit ipsum ab, animi eos dicta veniam itaque minus explicabo corrupti facere exercitationem aliquid fugiat corporis hic amet. Ipsum, velit cum dignissimos laboriosam ad tempore esse totam, corrupti cupiditate architecto exercitationem.</p>
+    </div>
+    <br />
+    <div class="container">
+        <h1>Our Products</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100" style="width: 18rem">
+                    <img src="CatanCard.jpg" class="card-img-top" alt="Board Games">
+                    <div class="card-body">
+                        <h5 class="card-title">Board Games</h5>
+                        <p class="card-text">All your board games and accessories to make your next game night a success!</p>
+                        <a href="boardgames.html" class="btn btn-primary">Check 'em Out!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 18rem">
+                    <img src="magic_cards.jpg" class="card-img-top" alt="Card Games">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Games</h5>
+                        <p class="card-text">Build your next tournament deck with our high quality singles and boosters!</p>
+                        <a href="cardgames.html" class="btn btn-primary">Get Started!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 18rem">
+                    <img src="nintendocontroller.jpg" class="card-img-top" alt="Video Games">
+                    <div class="card-body">
+                        <h5 class="card-title">Video Games</h5>
+                        <p class="card-text">Retro players rejoice! Classic video game consoles are now in stock!</p>
+                        <a href="videogames.html" class="btn btn-primary">Let's a Go!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container" style="color:white">
+        <h1>In-Store Events</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100" style="width: 18rem">
+                    <img src="storefront.jpg" class="card-img-top" alt="Game Nights">
+                    <div class="card-body">
+                        <h5 class="card-title">Game Nights</h5>
+                        <p class="card-text">Join us every week for an evening of fun for the entire family!</p>
+                        <a href="gamenights.html" class="btn btn-primary">Get the Party Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 18rem">
+                    <img src="dragontrophy.jpg" class="card-img-top" alt="Tournaments">
+                    <div class="card-body">
+                        <h5 class="card-title">Tournaments</h5>
+                        <p class="card-text">Play in competetive matches for bragging rights and cool prizes!</p>
+                        <a href="tournaments.html" class="btn btn-primary">Start Dueling!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="width: 18rem">
+                    <img src="signingthescroll.jpg" class="card-img-top" alt="Event Sign Up">
+                    <div class="card-body">
+                        <h5 class="card-title">Event Sign Up</h5>
+                        <p class="card-text">Retro players rejoice! Classic video game consoles are now in stock!</p>
+                        <a href="eventsignup.html" class="btn btn-primary">Sign Me Up!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
