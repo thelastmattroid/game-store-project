@@ -11,19 +11,56 @@
             }
             h1 {
                 text-align:center;
-                color:white;
+                color:lavender;
             }
+            h3 {
+                text-align:center;
+                color:lavender;
+                text-decoration:underline;
+                padding-top:8px;
+                padding-bottom:5px;
+            }
+            img {
+                border-radius:.375rem;
+                border-style:solid;
+                border-color:lavender;
+                border-width:2px;
+                height:fit-content;
+            }
+            .col-9 {
+                border-radius:30px;
+                border-style:solid;
+                border-color:lavender;
+                border-width:1px;
+            }
+            .btn {
+                background-color:rgb(146, 26, 96);
+                color:lavender;
+                text-align:center;
+                text-decoration:none;
+                font-size:16px;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                width:25%;
+                border:1px lavender;
+            }
+            p {
+                color:lavender;
+            }
+
         </style>
+    </head>
         <body>
             <nav class="navbar navbar-expand-lg navbar-black bg-black">
                 <a class="westwood-nav" href="home-page.html">
-                    <img src="Westwood_Logo.jpg" width="85" height="70" alt="Westwood Games Logo">
+                    <img src="Westwood_Logo.jpg" width="85" height="70" alt="Westwood Games Logo" style="border:unset">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto" style="padding-left:10px;">
                         <li class="nav-item">
                             <a class="nav-link" href="home-page.html" style="color:white">Home</a>
                         </li>
@@ -57,26 +94,57 @@
             <h1>Board Games & Accessories</h1>
             <br />
             <div class="container">
-                <img src="warhammerheadimage.jpg" class="img-fluid" class="mx-auto d-block" alt="Warhammer miniatures game" height="600px" width="100%">
+                <img src="warhammerheadimage.jpg" class="img-fluid" class="mx-auto d-block" alt="Warhammer miniatures game" height="400px" width="100%">
             </div>    
             <br />
             <div class="container">
-                    <p style="color:white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae commodi aperiam laborum aliquid. Nam sed tenetur, sunt labore tempore voluptatibus, ipsa, cumque placeat ab aliquid dignissimos. Molestias laboriosam a tempora. Quisquam, ratione minima, earum facilis beatae fugiat ducimus ipsa quis sit ut debitis veritatis corporis odio itaque facere? Neque officia maxime doloremque praesentium perspiciatis! Fuga laborum ab amet. Aliquam facere quis odit ex, mollitia exercitationem nam et placeat, voluptates quisquam est tempore vitae odio aspernatur repudiandae eaque, porro quos delectus possimus! Dolores porro in qui odio, unde totam fuga eum voluptate voluptas quidem perspiciatis laborum quis aperiam culpa dolore!</p>
+                    <p style="color:lavender">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae commodi aperiam laborum aliquid. Nam sed tenetur, sunt labore tempore voluptatibus, ipsa, cumque placeat ab aliquid dignissimos. Molestias laboriosam a tempora. Quisquam, ratione minima, earum facilis beatae fugiat ducimus ipsa quis sit ut debitis veritatis corporis odio itaque facere? Neque officia maxime doloremque praesentium perspiciatis! Fuga laborum ab amet. Aliquam facere quis odit ex, mollitia exercitationem nam et placeat, voluptates quisquam est tempore vitae odio aspernatur repudiandae eaque, porro quos delectus possimus! Dolores porro in qui odio, unde totam fuga eum voluptate voluptas quidem perspiciatis laborum quis aperiam culpa dolore!</p>
             </div>
             <br />
             <h1>Categories</h1>
             <br />
             <div class="container">
-                <div class="row row-cols-2">
-                    <div class="col" width="45%">
-                        <img src="roleplayinggames.jpg" alt="Role Playing Games" height="200px" width="250px">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="roleplayinggames.jpg" alt="Role Playing Games" class="img-fluid">
                     </div>
-                    <div class="col"">
-                        Role Playing Games: Rulebooks, Monster Manuals, Adventure Modules, and Campaign Settings
+                    <div class="col-9">
+                        <h3>Roleplaying Games</h3>
+                        <p style="color:lavender">Every Rulebook, Monster Manual, Adventure Module, and Campaign Setting you need for all of your favorite RPGs!</p>
+                        <p style="color:lavender">Shop online or in-store for books, maps, guides, tiles, and playsets for games like Dungeons & Dragons, Pathfinder, Gloomhaven, and more!</p>
+                        <button type="button" class="btn">Start Your Adventure!</button>
                     </div>
                 </div>
             </div>
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <h3>Trading Card Games</h3>
+                        <p>Singles, Boxes, and Booster Packs from the best TCGs in the world!</p>
+                        <p>Purchase packs and boxes online from games like Magic: The Gathering, Pokemon, Yu-Gi-Oh!, and more! Singles available in-store only.</p>
+                        <button type="button" class="btn">Crack Some Packs!</button>
+                    </div>
+                    <div class="col-3">
+                        <img src="pkmncardgame.jpg" alt="Trading Card Games" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="dnddice.jpg" alt="Dice and Accessories" class="img-fluid">
+                    </div>
+                    <div class="col-9">
+                        <h3>Dice and Accessories</h3>
+                        <p>Everyone needs their own special bag of dice when they're rolling their saving throws!</p>
+                        <p>Search our collection for metallic, acrylic, gemstone, and themed dice and accessories!</p>
+                        <button type="button" class="btn">Roll the Dice!</button>
+                    </div>
+                </div>
+            </div>
+            <br />
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         </body>
-    </head>
 </html>
