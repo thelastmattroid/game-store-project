@@ -1,0 +1,50 @@
+body {
+    background-color:black;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+h1 {
+    text-align:center;
+    color:lavender;
+}
+h3 {
+    text-align:center;
+    color:lavender;
+    text-decoration:underline;
+    padding-top:8px;
+    padding-bottom:5px;
+}
+img {
+    border-radius:.375rem;
+    border-style:solid;
+    border-color:lavender;
+    border-width:2px;
+    height:fit-content;
+}
+.col-9 {
+    border-radius:30px;
+    border-style:solid;
+    border-color:lavender;
+    border-width:1px;
+}
+.btn {
+    background-color:rgb(146, 26, 96);
+    color:lavender;
+    text-align:center;
+    text-decoration:none;
+    font-size:16px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;
+    border:1px lavender;
+}
+p {
+    color:lavender;
+}
+iframe {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
