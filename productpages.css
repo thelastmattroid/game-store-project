@@ -22,7 +22,7 @@ img {
     border-width:2px;
     height:fit-content;
 }
-.col-9 {
+.col-sm-9 {
     border-radius:30px;
     border-style:solid;
     border-color:lavender;
@@ -47,4 +47,10 @@ iframe {
     display:block;
     margin-left:auto;
     margin-right:auto;
+}
+label {
+    color:lavender;
+}
+li {
+    color:lavender;
 }
